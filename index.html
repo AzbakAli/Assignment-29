@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do App</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="image.png">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database-compat.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>To-Do List</h1>
+        <h1>To-Do App</h1>
         <div class="input-container">
             <input type="text" id="taskInput" placeholder="Add a new task...">
             <button id="addTaskBtn">Add</button>
         </div>
+        <ol id="taskList"></ol>
         <div class="controls">
             <span id="taskCount">0 tasks</span>
             <button id="clearAllBtn">Clear All</button>
         </div>
-        <ol id="taskList"></ol>
     </div>
     <script src="app.js"></script>
 </body>
